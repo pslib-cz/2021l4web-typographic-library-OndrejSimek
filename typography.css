@@ -20,6 +20,12 @@ h1, h2, h3, h4, h5, h6 {
     color: #0e264b;
     text-transform: uppercase;
 }
+.heading__span {
+    font-size: 16px;
+}
+.heading__span code {
+    margin-right: 1em;
+}
 h1 {
     font-size: 2.6rem;
     line-height: 1.6;
