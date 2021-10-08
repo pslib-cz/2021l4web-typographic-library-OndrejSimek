@@ -10,15 +10,17 @@ body {
 main {
     margin: auto 100px;
 }
-.h1-main {
+.h1--main {
     margin-top: 2em;
-    margin-bottom: 3em;
+    margin-bottom: 1.5em;
 }
 h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat";
     font-weight: 700;
     color: #0e264b;
     text-transform: uppercase;
+    margin-bottom: 1rem;
+    margin-top: 0;
 }
 .heading__span {
     font-size: 16px;
@@ -50,3 +52,46 @@ h6 {
     font-size: 1.6rem;
     line-height: 1.4;
 }
+.section__text {
+    width: 450px;
+    line-height: 20px;
+    letter-spacing: 0.1px; 
+}
+b {
+    font-weight: bolder;
+}
+mark {
+    background-color: rgb(255, 255, 0);
+    padding: 0 3px;
+}
+small {
+    font-size: 12px;
+}
+.section__ordered_list {
+    margin: 0;
+    padding-left: 50px;
+}
+.section__ordered_list li {
+    margin-bottom: 3px;
+}
+img {
+    width: 100%;
+}
+.section__figure {
+    width: 500px;
+    position: relative;
+}
+.section__figure__figcaption {
+    display: none;
+}
+.section__figure:hover .section__figure__figcaption {
+    display: block;
+    position: absolute;
+    bottom: 4px;
+    width: 100%;
+    background-color: rgb(128, 128, 128) ;
+    opacity: 0.6;
+    text-align: center;
+    padding: 5px 0;
+}
+

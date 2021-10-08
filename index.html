@@ -10,16 +10,74 @@
 
 <body>
     <main>
-        <h1 class="h1-main">Knihovna typografie</h1>
-       <section>
-           <h2>Nadpisy</h2>
-            <h1>Heading  <span class="heading__span"><code>h1</code>2.6rem</span></h1>
-            <h2>Heading  <span class="heading__span"><code>h1</code>2.4rem</span></h2>
-            <h3>Heading  <span class="heading__span"><code>h1</code>2.2rem</span></h3>
-            <h4>Heading  <span class="heading__span"><code>h1</code>2rem</span></h4>
-            <h5>Heading  <span class="heading__span"><code>h1</code>1.8rem</span></h5>
-            <h6>Heading  <span class="heading__span"><code>h1</code>1.6rem</span></h6>
-       </section>
+        <header>
+            <nav>
+                <ul>
+                    <li> <a href="#nadpis">Nadpisy</a></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
+        </header>
+        <h1 class="h1--main">Knihovna typografie</h1>
+        <section id="nadpis">
+            <h2>Nadpisy</h2>
+            <h1>Heading <span class="heading__span"><code>h1</code> 2.6rem</span></h1>
+            <h2>Heading <span class="heading__span"><code>h2</code> 2.4rem</span></h2>
+            <h3>Heading <span class="heading__span"><code>h3</code> 2.2rem</span></h3>
+            <h4>Heading <span class="heading__span"><code>h4</code> 2rem</span></h4>
+            <h5>Heading <span class="heading__span"><code>h5</code> 1.8rem</span></h5>
+            <h6>Heading <span class="heading__span"><code>h6</code> 1.6rem</span></h6>
+        </section>
+        <section class="" id="texty">
+            <h2>Texty</h2>
+            <p class="section__text">
+                Lorem ipsum dolor sit amet, <i>consectetur</i> adipiscing elit. Nunc <b>sollicitudin</b>, nisl quis
+                rutrum porttitor,
+                neque enim posuere mauris, non auctor nunc ex semper turpis. Vivamus gravida est et enim posuere, sit
+                amet luctus lorem faucibus. Vestibulum vel <mark>lacinia</mark> quam. Donec accumsan nulla lacus, nec
+                efficitur augue
+                laoreet vel. Morbi consectetur risus eu ornare laoreet. Cras ullamcorper <small>congue</small> velit,
+                sed venenatis
+                erat rutrum et. Nunc laoreet lorem id dictum iaculis.
+            </p>
+        </section>
+        <section id="Seznam">
+            <h2>Seznamy</h2>
+            <ol class="section__ordered_list">
+                <li>Pečivo
+                    <ol type="a">
+                        <li>Chleba</li>
+                        <li>Rohlík</li>
+                        <li>Houska</li>
+                    </ol>
+                </li>
+                <li>Zelenina
+                    <ol type="a">
+                        <li>Paprika</li>
+                        <li>Okurka</li>
+                        <li>Salát</li>
+                    </ol>
+                </li>
+                <li>Ovoce
+                    <ol type="a">
+                        <li>Jablko</li>
+                        <li>Hruška</li>
+                        <li>Mandarinka</li>
+                    </ol>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Obrázky</h2>
+            <figure class="section__figure">
+                <img src="./img/20210926_010426.jpg" alt="Jára">
+                <figcaption class="section__figure__figcaption">
+                    Jára
+                </figcaption>
+            </figure>
+        </section>
     </main>
 </body>
 
