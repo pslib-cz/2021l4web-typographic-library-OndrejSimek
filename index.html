@@ -25,12 +25,11 @@
         <h1 class="h1--main">Knihovna typografie</h1>
         <section id="nadpis">
             <h2>Nadpisy</h2>
-            <h1>Heading <span class="heading__span"><code>h1</code> 2.6rem</span></h1>
-            <h2>Heading <span class="heading__span"><code>h2</code> 2.4rem</span></h2>
-            <h3>Heading <span class="heading__span"><code>h3</code> 2.2rem</span></h3>
-            <h4>Heading <span class="heading__span"><code>h4</code> 2rem</span></h4>
-            <h5>Heading <span class="heading__span"><code>h5</code> 1.8rem</span></h5>
-            <h6>Heading <span class="heading__span"><code>h6</code> 1.6rem</span></h6>
+            <h1>Heading <span class="heading__span"><code>h1</code> 2.4rem</span></h1>
+            <h2>Heading <span class="heading__span"><code>h2</code> 2.2rem</span></h2>
+            <h3>Heading <span class="heading__span"><code>h3</code> 1.8rem</span></h3>
+            <h4>Heading <span class="heading__span"><code>h4</code> 1.5rem</span></h4>
+            <h5>Heading <span class="heading__span"><code>h5</code> 1.3rem</span></h5>
         </section>
         <section class="" id="text">
             <h2>Texty</h2>
@@ -40,49 +39,87 @@
                 neque enim posuere mauris, non auctor nunc ex semper turpis. Vivamus gravida est et enim posuere, sit
                 amet luctus lorem faucibus. Vestibulum vel <mark>lacinia</mark> quam. Donec accumsan nulla lacus, nec
                 efficitur augue
-                laoreet vel. Morbi <s>consectetur</s> risus eu ornare laoreet. Cras ullamcorper <small>congue</small> velit,
+                laoreet vel. Morbi <s>consectetur</s> risus eu ornare laoreet. Cras ullamcorper <small>congue</small>
+                velit,
                 sed venenatis
                 erat rutrum et. Nunc laoreet lorem id dictum iaculis.
             </p>
         </section>
         <section id="seznam">
             <h2>Seznamy</h2>
-            <ol class="section__ordered_list">
-                <li>Pečivo
-                    <ol type="a">
-                        <li>Chleba</li>
-                        <li>Rohlík</li>
-                        <li>Houska</li>
-                    </ol>
-                </li>
-                <li>Zelenina
-                    <ol type="a">
-                        <li>Paprika</li>
-                        <li>Okurka</li>
-                        <li>Salát</li>
-                    </ol>
-                </li>
-                <li>Ovoce
-                    <ol type="a">
-                        <li>Jablko</li>
-                        <li>Hruška</li>
-                        <li>Mandarinka</li>
-                    </ol>
-                </li>
-            </ol>
+            <div class="seznam--flex">
+                <ol class="section__ordered_list">
+                    <li>Pečivo
+                        <ol type="a">
+                            <li>Chleba</li>
+                            <li>Rohlík</li>
+                            <li>Houska</li>
+                        </ol>
+                    </li>
+                    <li>Zelenina
+                        <ol type="a">
+                            <li>Paprika</li>
+                            <li>Okurka</li>
+                            <li>Salát</li>
+                        </ol>
+                    </li>
+                    <li>Ovoce
+                        <ol type="a">
+                            <li>Jablko</li>
+                            <li>Hruška</li>
+                            <li>Mandarinka</li>
+                        </ol>
+                    </li>
+                </ol>
+                <ul class="section__unordered_list">
+                    <li>Pečivo
+                        <ul>
+                            <li>Chleba</li>
+                            <li>Rohlík</li>
+                            <li>Houska</li>
+                        </ul>
+                    </li>
+                    <li>Zelenina
+                        <ul>
+                            <li>Paprika</li>
+                            <li>Okurka</li>
+                            <li>Salát</li>
+                        </ul>
+                    </li>
+                    <li>Ovoce
+                        <ul>
+                            <li>Jablko</li>
+                            <li>Hruška</li>
+                            <li>Mandarinka</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section id="obrazky">
             <h2>Obrázky</h2>
-            <figure class="section__figure">
-                <a href="./img/20210926_010426.jpg"><img src="./img/20210926_010426.jpg" alt="Jára"></a>
-                <figcaption class="section__figure__figcaption">
-                    Jára
-                </figcaption>
-            </figure>
+            <div class="obrazky--flex">
+                <figure class="section__figure">
+                    <a href="./img/20210926_010426.jpg"><img src="./img/20210926_010426.jpg" alt="Jára"></a>
+                    <figcaption class="section__figure__figcaption">
+                        Usmívající se Jára
+                    </figcaption>
+                </figure>
+                <figure class="section__figure">
+                    <a href="./img/20210926_010426.jpg"><img src="./img/20210926_010426.jpg" alt="Jára"></a>
+                    <figcaption class="section__figure__figcaptionv2">
+                        Usmívající se Jára
+                    </figcaption>
+                </figure>
+            </div>
         </section>
         <section id="button">
             <h2>Tlačítka</h2>
-            <button class="button" type="button">Click me!</button>
+            <div class="buttons--flex">
+                <button class="button button--round" type="button">Click me!</button>
+                <a class="button button--round" href="https://www.google.com/"><span class="button__text">Click me!</span></a>
+                <input class="button button--round" type="submit" value="Click me!">
+            </div>
         </section>
         <section id="citace">
             <h2>Quotes</h2>
@@ -93,10 +130,50 @@
                 <p>
                     "Jasně, že bych sežral cizího psa."
                 </p>
-                <figcaption class="blockquote__figcaption">
+                <cite class="blockquote__figcaption">
                     -Jaroslav
-                </figcaption>
+                </cite>
             </blockquote>
+        </section>
+        <section>
+            <h2>Tabulka</h2>
+            <table>
+                <tr>
+                  <th>Město</th>
+                  <th>Počet obyvatel</th>
+                  <th>Rozloha (km<sup>2</sup>)</th>
+                </tr>
+                <tr>
+                  <td>Praha</td>
+                  <td>1 335 084</td>
+                  <td>496,21</td>
+                </tr>
+                <tr>
+                  <td>Brno</td>
+                  <td>382 405</td>
+                  <td>230,18</td>
+                </tr>
+                <tr>
+                  <td>Ostrava</td>
+                  <td>284 982</td>
+                  <td>214,23</td>
+                </tr>
+                <tr>
+                  <td>Plzeň</td>
+                  <td>175 219</td>
+                  <td>137,67</td>
+                </tr>
+                <tr>
+                  <td>Liberecs</td>
+                  <td>104 261</td>
+                  <td>106,09</td>
+                </tr>
+                <tr>
+                  <td>Olomouc</td>
+                  <td>100 514</td>
+                  <td>103,33</td>
+                </tr>
+              </table>
         </section>
     </main>
 </body>
