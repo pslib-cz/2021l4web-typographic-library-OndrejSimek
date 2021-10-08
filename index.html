@@ -12,11 +12,13 @@
     <main>
         <header>
             <nav>
-                <ul>
-                    <li> <a href="#nadpis">Nadpisy</a></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                <ul class="nav__ul">
+                    <li class="nav__ul__item_list"><a href="#nadpis">Nadpisy</a></li>
+                    <li class="nav__ul__item_list"><a href="#text">Text</a></li>
+                    <li class="nav__ul__item_list"><a href="#seznam">Seznam</a></li>
+                    <li class="nav__ul__item_list"><a href="#obrazky">Obrazky</a></li>
+                    <li class="nav__ul__item_list"><a href="#button">Button</a></li>
+                    <li class="nav__ul__item_list"><a href="#citace">Citace</a></li>
                 </ul>
             </nav>
         </header>
@@ -30,7 +32,7 @@
             <h5>Heading <span class="heading__span"><code>h5</code> 1.8rem</span></h5>
             <h6>Heading <span class="heading__span"><code>h6</code> 1.6rem</span></h6>
         </section>
-        <section class="" id="texty">
+        <section class="" id="text">
             <h2>Texty</h2>
             <p class="section__text">
                 Lorem ipsum dolor sit amet, <i>consectetur</i> adipiscing elit. Nunc <b>sollicitudin</b>, nisl quis
@@ -38,12 +40,12 @@
                 neque enim posuere mauris, non auctor nunc ex semper turpis. Vivamus gravida est et enim posuere, sit
                 amet luctus lorem faucibus. Vestibulum vel <mark>lacinia</mark> quam. Donec accumsan nulla lacus, nec
                 efficitur augue
-                laoreet vel. Morbi consectetur risus eu ornare laoreet. Cras ullamcorper <small>congue</small> velit,
+                laoreet vel. Morbi <s>consectetur</s> risus eu ornare laoreet. Cras ullamcorper <small>congue</small> velit,
                 sed venenatis
                 erat rutrum et. Nunc laoreet lorem id dictum iaculis.
             </p>
         </section>
-        <section id="Seznam">
+        <section id="seznam">
             <h2>Seznamy</h2>
             <ol class="section__ordered_list">
                 <li>Pečivo
@@ -69,14 +71,32 @@
                 </li>
             </ol>
         </section>
-        <section>
+        <section id="obrazky">
             <h2>Obrázky</h2>
             <figure class="section__figure">
-                <img src="./img/20210926_010426.jpg" alt="Jára">
+                <a href="./img/20210926_010426.jpg"><img src="./img/20210926_010426.jpg" alt="Jára"></a>
                 <figcaption class="section__figure__figcaption">
                     Jára
                 </figcaption>
             </figure>
+        </section>
+        <section id="button">
+            <h2>Tlačítka</h2>
+            <button class="button" type="button">Click me!</button>
+        </section>
+        <section id="citace">
+            <h2>Quotes</h2>
+            <h3>Citace</h3>
+            <q>Jasně, že bych sežral cizího psa</q>
+            <h3>Bloková citace</h3>
+            <blockquote>
+                <p>
+                    "Jasně, že bych sežral cizího psa."
+                </p>
+                <figcaption class="blockquote__figcaption">
+                    -Jaroslav
+                </figcaption>
+            </blockquote>
         </section>
     </main>
 </body>
