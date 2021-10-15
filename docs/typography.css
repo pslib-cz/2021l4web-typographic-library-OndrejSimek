@@ -71,6 +71,11 @@ mark {
 small {
     font-size: 12px;
 }
+.text__div > * {
+    display: block;
+    margin-bottom: 10px;
+    width: fit-content;
+}
 .seznam--flex {
     display: flex;
 }
@@ -137,6 +142,8 @@ ul {
     padding: 10px;
     padding-top: 0;
     border-radius: 3px;
+    font-weight: bolder;
+    font-size: larger;
 }
 .nav__ul__item_list a:hover {
     color: #0078ef;
@@ -177,7 +184,9 @@ input {
 }
 q {
     background-color: rgb(201, 201, 201);
-    padding: 1rem;
+    padding: 2rem 0;
+    padding-right: 3rem;
+    padding-left: 1rem;
     border-radius: 5px;
     margin-bottom: 3em;
     display: inline-block;
@@ -186,10 +195,11 @@ q {
 }
 blockquote {
     background-color: rgb(201, 201, 201);
-    padding: 1rem;
+    padding: 2rem 0;
+    padding-left: 1rem;
+    margin: 0;
     border-radius: 5px;
-    margin:0;
-    font-style: italic;
+    font-style: italic;;
 }
 .blockquote__figcaption {
     padding-top: 15px;
@@ -199,8 +209,11 @@ table {
     border-collapse: collapse;
 }
 td, th {
-    border: 1px solid gray;
+    border: 1px solid rgb(201, 201, 201);
     padding: 10px;
+}
+th {
+    background-color: #0078ef;
 }
 tr:nth-child(even){
     background-color: #DDDDDD;
