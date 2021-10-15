@@ -181,6 +181,7 @@ q {
     border-radius: 5px;
     margin-bottom: 3em;
     display: inline-block;
+    font-style: italic;
     
 }
 blockquote {
@@ -188,6 +189,7 @@ blockquote {
     padding: 1rem;
     border-radius: 5px;
     margin:0;
+    font-style: italic;
 }
 .blockquote__figcaption {
     padding-top: 15px;
